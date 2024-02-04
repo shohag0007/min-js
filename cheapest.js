@@ -11,7 +11,7 @@ const phones = [
 function getCheapestPhone(phones){
     let min = phones[0];
     for(const phone of phones){
-        if(phone.price < min.price){
+        if(phone.price > min.price){
             min = phone;
         }
     }
